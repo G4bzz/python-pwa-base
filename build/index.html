@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto IA</title>
+
+    <link rel="manifest" href="/static/manifest.json">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/icons/site.webmanifest">
+    <link rel="mask-icon" href="/static/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+     <script defer src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+
+  </head>
+  <body>
+    <button id="botao" py-click="testing()">teste</button>
+  <div ><p id="output"></p></div>
+  <py-script src="/static/python/main.py"></py-script>
+  <script src="/static/js/pwa-scaffold.js"></script>
+  </body>
+</html>
